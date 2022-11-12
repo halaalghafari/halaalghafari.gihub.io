@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadi Alkhlaf</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/hala.jpg">
+    
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="global.css">
+   <script> function scrollTrigger(selector){
+    let els = document.querySelectorAll(selector)
+    els = Array.from(els)
+    els.forEach(el => {
+      addObserver(el)
+    })
+  }
+  function addObserver(el){
+      // We are creating a new IntersectionObserver instance
+      let observer = new IntersectionObserver((entries, observer) => { // This takes a callback function that receives two arguments: the elements list and the observer instance.
+        entries.forEach(entry => {
+          // `entry.isIntersecting` will be true if the element is visible
+        if(entry.isIntersecting) {
+          entry.target.classList.add('active')
+          // We are removing the observer from the element after adding the active class
+          observer.unobserve(entry.target)
+        }
+      })
+    })
+    // Adding the observer to the element
+    observer.observe(el)
+  }
+ 
+     document.onreadystatechange = () => {
+        // document.getElementById('language').classList.remove('active');
+        // scrollTrigger('.section-title');
+        scrollTrigger('.animated-right');
+        scrollTrigger('.animated-bottom');
+        scrollTrigger('.animated-left')
+        scrollTrigger('.section-title')
+        // document.getElementById('language').classList.add('active');
+     }
+   </script>
+
+</head>
+<body>
+    
+    <div class="personal-inforamtion bg-blue">
+        <div class="main-image animated-left">
+            <img src="images/hala.jpg" alt="">
+        </div>
+        
+        <div class="personal-inforamtion-item animated-right">
+            <div class="white x-lg bold">HALA AL-GHAFARI</div>
+            <div class="white lg bold">Dubai UAE</div>
+        </div>
+
+        <div class="personal-inforamtion-item  animated-left">
+            <div class="white lg"><strong>Nationality: </strong>Syrian</div>
+            <div class="white lg"><strong>Gender: </strong>Female</div>
+            <div class="white lg"><strong>Date of birth: </strong>August 11, 1992</div>
+            <div class="white lg"><strong>Marital Status: </strong>Single</div>
+        </div>
+        <div class="personal-inforamtion-item  animated-left">
+            <div class="link-item white lg">
+                <img src="icon/email.png" alt="">
+                <div class="pd-left-lg"></div>
+                <div class="">ghafari.hala@gmail.com</div>
+            </div>
+            <div class="link-item white lg">
+                <img src="icon/phone-call (1).png" alt="">
+                <div class="pd-left-lg"></div>
+                <div class="white">+963987149729</div>
+            </div>
+            <div class="link-item white lg">
+                <img src="icon/linkedin.png" alt="">
+                <div class="pd-left-lg"></div>
+                <a href="https://www.linkedin.com/in/hala-alghafari-940654116" target="_blank" class="overflow-ellipsis white">https://www.linkedin.com/in/hala-alghafari-940654116</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="body">
+
+
+        <div class="section">
+            <div class="section-title">SENIOR SOCIAL MEDIA SPECIALIST</div>
+            <div class="section-divider"></div>
+
+            <div class="sub-section animated-left">
+                <div class="sub-section-sub-title">Highly motivated, hard worker, and the results are oriented with excellent
+                    interpersonal skills. Looking for joining an organization that will allow me to apply
+                    and utilize the knowledge and experience that I have while continuing to grow
+                    and enhance my skills to become an expert in my field.
+                    </div>
+            </div>
+
+         </div>
+
+        <div class="section">
+            <div class="section-title">WORK EXPERIENCE</div>
+            <div class="section-divider"></div>
+
+            <div class="sub-section animated-left">
+                <div class="sub-section-title">MAX ART</div>
+                <div class="sub-section-sub-title">May 2022 - Present | Advertising & Marketing in Dubai</div>
+                <div class="sub-section-title">Senior Social Media Specialist</div>
+                <ul class="sub-section-sub-title black">
+                    <li>Creating social media marketing strategies</li>
+                    <li>Proposes new ideas and concepts for social media content</li>
+                    <li>Developing social media monthly content plans</li>
+                    <li>Building a valuable relationship with clients by understanding their needs
+                        and visualizing them on social media</li>
+                    <li>Collaborating with internal department to facilitate client need fulfillment</li>
+                </ul>
+            </div>
+
+            <div class="sub-section animated-left">
+                <div class="sub-section-title">ECHO MEDIA</div>
+                <div class="sub-section-sub-title">Apr 2019 - May 2022 | Marketing Agency in Damascus</div>
+                <div class="sub-section-title">Assistant Marketing Manager</div>
+                <ul class="sub-section-sub-title black">
+                    
+                    <li>Supporting the marketing team with planning and implementing marketing
+                        campaigns
+                        </li>
+                    <li>Creating creative content (Monthly Plans)</li>
+                    <li>Following up with the designers and photographers to ensure that 
+                        all designs, photos, and videos are informative & match the idea
+                    </li>
+                    <li>Preparing marketing strategies for all clients</li>
+                    <li>Providing constructive feedback as a monthly report
+                    </li>
+                    <li>Following up with the team to ensure we deliver all tasks on time with the
+                        best quality</li>
+                    <li>Training others in the team</li>    
+                </ul>
+            </div>
+
+            <div class="sub-section animated-left">
+                <div class="sub-section-title">E-TADWEER</div>
+                <div class="sub-section-sub-title">Dec 2017 - Aug 2018
+                    | Recycling e-waste project
+                    in Jeddah
+                    </div>
+                <div class="sub-section-title">Community Manager
+                </div>
+                <ul class="sub-section-sub-title black">
+                    
+                  <li>Managing Instagram accoun</li>
+                  
+                  <li>Creating content in both languages (Arabic & English)</li>
+                  
+                  <li>Following up the whole process of our mission which is helping to provide
+                    a cleaner environment and ensuring our customer's satisfaction
+                    </li>
+                  
+                  <li>Customer relationship</li>
+                  
+                  <li>Communication</li> 
+                </ul>
+            </div>
+
+            <div class="sub-section animated-left">
+                <div class="sub-section-title">GLUETUBE</div>
+                <div class="sub-section-sub-title">Nov 2016 - Jan 2017
+                    | Digital Marketing Agency
+                    in Jeddah                    
+                    </div>
+                <div class="sub-section-title">Community Manager
+                </div>
+                <ul class="sub-section-sub-title black">
+                    
+                    <li>Creating creative content (Monthly Plans)
+                    </li>
+                    <li>Publishing posts
+                    </li>
+                    <li>Moderating (responding and replying to comments & answering questions)
+                    </li>
+                    <li>Communicating with coworkers to back up and get their feedback to
+                        ensure that everything has been done perfectly on time</li>
+                </ul>
+            </div>
+
+            <div class="sub-section animated-left">
+                <div class="sub-section-title">RUMMAN COMPANY</div>
+                <div class="sub-section-sub-title">300 hours - 2014
+
+                    | Destination Jeddah Magazine
+                    in Jeddah
+                                                      
+                    </div>
+                <div class="sub-section-title">Supervised Internship
+                    in marketing
+                </div>
+                <div class="sub-section-sub-title">Marketing department:</div>
+                <ul class="sub-section-sub-title black">
+                    
+                    <li>Searching for new clients
+                    </li>
+                    <li>Bridging the communication gap between clients and the company
+                    </li>
+                    <li>Helping to formulate proper promotion plans for the company
+                    </li>
+                    <li>Analyzing focus group meetings and suggesting plans
+                    </li>
+                </ul>
+                <div class="sub-section-sub-title">Editorial department:</div>
+                <ul class="sub-section-sub-title black">
+                    
+                    <li>Helping to have a proper translation for editorial context from Arabic
+                        into English
+                    </li>
+                    
+                </ul>
+
+                <div class="sub-section-sub-title">Administration department:
+                </div>
+                <ul class="sub-section-sub-title black">
+                    
+                    <li>Supporting the operation manager in following up with the
+                        distributors around the city
+                    </li>
+                    
+                </ul>
+            </div>
+         </div>
+         <div class="section">
+            <div class="section-title">EDUCATION</div>
+            <div class="section-divider"></div>
+
+            <div class="sub-section  animated-left">
+                <div class="sub-section-title">Effat University / Jeddah - KSA</div>
+                <div class="sub-section-sub-title">Bachelor of Science Degree in College of Business, Marketing Department
+                </div>
+                <div class="sub-section-title">2010- 2015
+                </div>
+                <div class="sub-section-sub-title">3.18 /4.0 GPA
+                </div>
+            </div>
+
+         </div>
+
+         <div class="section">
+            <div class="section-title">ACHIEVEMENTS & CERTIFICATIONS</div>
+            <div class="section-divider"></div>
+
+            <div class="sub-section  animated-left">
+                <ul class="sub-section-sub-title black">
+                    <li>Unilever Quest Competition – Unilever brand project</li>
+                    <li>Adobe Photoshop CC – New Horizons Training Center
+                    </li>
+                    <li>Adobe Illustrator CS6 – New Horizons Training Center
+                    </li>
+                    <li>Adobe InDesign CC – New Horizons Training Center
+                    </li>
+                </ul>
+            </div>
+
+            
+
+         </div>
+
+         <div class="section">
+            <div class="section-title"> DIGITAL MARKETING SKILLS</div>
+            <div class="section-divider"></div>
+
+            <div class="sub-section  animated-left">
+                <div class="sub-section-title">
+                    Social Media Ads
+                </div>
+                <div class="row bg-grey" style="width: 200px;">
+                    <div class="row bg-blue" style="width: 80%;height: 15px;"></div>
+                </div>
+
+                <div class="pd-top-sm"></div>
+
+                <div class="sub-section-title">
+                    Google Ads
+                </div>
+                <div class="row bg-grey" style="width: 200px;">
+                    <div class="row bg-blue" style="width: 50%;height: 15px;"></div>
+                </div>
+
+                <div class="pd-top-sm"></div>
+
+                <div class="sub-section-title">
+                    SEO
+                </div>
+                <div class="row bg-grey" style="width: 200px;">
+                    <div class="row bg-blue" style="width: 25%;height: 15px;"></div>
+                </div>
+            </div>
+
+         </div>
+        
+         <div class="section">
+            <div class="section-title">LANGUAGES</div>
+            <div class="section-divider"></div>
+
+            <div class="sub-section  animated-left">
+                <div class="sub-section-title">
+                    Arabic
+                </div>
+                <div class="row bg-grey" style="width: 200px;">
+                    <div class="row bg-blue" style="width: 100%;height: 15px;"></div>
+                </div>
+
+                <div class="pd-top-sm"></div>
+
+                <div class="sub-section-title">
+                    English
+                </div>
+                <div class="row bg-grey" style="width: 200px;">
+                    <div class="row bg-blue" style="width: 90%;height: 15px;"></div>
+                </div>
+
+                <div class="pd-top-sm"></div>
+
+                <div class="sub-section-title">
+                    Turkish
+                </div>
+                <div class="row bg-grey" style="width: 200px;">
+                    <div class="row bg-blue" style="width: 70%;height: 15px;"></div>
+                </div>
+            </div>
+
+         </div>
+
+      
+
+         <div class="section">
+            <div class="section-title">MARKETING SKILLS</div>
+            <div class="section-divider"></div>
+            <div class="sub-section flex-wrap animated-left">
+                <div class="sub-section-sub-title">Analytical thinking</div>
+                <div class="hor-divider-grey"></div>
+
+                <div class="sub-section-sub-title">Creative mindset
+                </div>
+                <div class="hor-divider-grey"></div>
+                
+                <div class="sub-section-sub-title">Customer relationship management</div>
+                <div class="hor-divider-grey"></div>
+
+                <div class="sub-section-sub-title">Good user of MS. Office</div>
+                <div class="hor-divider-grey"></div>
+
+                <div class="sub-section-sub-title">Problem-Solving</div>
+                <div class="hor-divider-grey"></div>
+
+                <div class="sub-section-sub-title">Project Management</div>
+                <div class="hor-divider-grey"></div>
+
+                <div class="sub-section-sub-title">Research</div>
+                <div class="hor-divider-grey"></div>
+
+                <div class="sub-section-sub-title">Social Media Marketing</div>
+                <div class="hor-divider-grey"></div>
+
+                <div class="sub-section-sub-title">Strong attention to detail</div>
+                <div class="hor-divider-grey"></div>
+
+                <div class="sub-section-sub-title">Visual Marketing</div>
+
+            </div>
+         </div>
+
+         <div class="pd-top-sm"></div>
+         <div class="pd-top-sm"></div>
+         <div class="row" style="width: 100%;">
+            <div>
+                <div class="sub-section-title">
+                    REFERENCES
+                </div>
+         
+                <div class="sub-section-sub-title">
+                    Available upon request
+                </div>
+            </div>
+            
+         </div>
+         
+    </div>
+
+</body>
+</html>

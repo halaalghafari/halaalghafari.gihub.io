@@ -1,0 +1,171 @@
+@font-face {
+    font-family: Inter-Regular;
+    src: url(fonts/Ubuntu-Regular.ttf);
+}
+*{
+    margin: 0;
+    font-family: Inter-Regular;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #733fc8;
+}
+.bg-purble{
+    background-color: #733fc8;
+}
+.black{
+    color: black !important;
+}
+.bg-grey{
+    background-color: rgba(66, 9, 47, 0.7);
+}
+
+.bg-blue{
+    background-color: #42092f;
+}
+
+.bg-white{
+    background-color: #f0f0f0;
+}
+.purble{
+   color: #733fc8;
+}
+
+.grey{
+   color: #49556b;
+}
+
+.blue{
+   color: #42092f;
+}
+
+.white{
+   color: #f0f0f0;
+}
+.bold{
+    font-weight: bold;
+}
+.normal{
+    font-weight: normal;
+}
+.x-lg{
+    font-size: 30px;
+}
+.lg{
+    font-size: 25px;
+}
+.md{
+    font-size: 20px;
+}
+.sm{
+    font-size: 16px;
+}
+.x-sm{
+    font-size: 14px;
+}
+.pd-top-x-lg{
+    padding-top: 30px;
+}
+
+.pd-top-lg{
+    padding-top: 25px;
+}
+.pd-top-md{
+    padding-top: 20px;
+}
+.pd-top-sm{
+    padding-top: 16px;
+}
+.pd-top-x-sm{
+    padding-top: 14px;
+}
+
+.pd-left-x-lg{
+    padding-left: 30px;
+}
+
+.pd-left-lg{
+    padding-left: 25px;
+}
+.pd-left-md{
+    padding-left: 20px;
+}
+.pd-left-sm{
+    padding-left: 16px;
+}
+.pd-left-x-sm{
+    padding-left: 14px;
+}
+.pd-sm{
+    padding: 16px;
+}
+
+@media (min-width: 1400px) {
+    .x-lg{
+        font-size: 25px;
+    }
+    .lg{
+        font-size: 20px;
+    }
+    .md{
+        font-size: 16px;
+    }
+    .sm{
+        font-size: 14px;
+    }
+    .x-sm{
+        font-size: 12px;
+    }
+}
+@media (max-width: 1399px) {
+    .x-lg{
+        font-size: 20px;
+    }
+    .lg{
+        font-size: 16px;
+    }
+    .md{
+        font-size: 14px;
+    }
+    .sm{
+        font-size: 12px;
+    }
+    .x-sm{
+        font-size: 10px;
+    }
+}
+@media (max-width: 1200px) {
+  
+}
+@media (max-width: 1024px) {
+    .x-lg{
+        font-size: 30px;
+    }
+   
+}
+@media (max-width: 768px) {
+    
+    .x-lg{
+        font-size: 18px;
+    }
+    .lg{
+        font-size: 12px;
+    }
+    .md{
+        font-size: 11px;
+    }
+    .sm{
+        font-size: 10px;
+    }
+    .x-sm{
+        font-size: 8px;
+    }
+    .pd-left-lg {
+        padding-left: 10px;
+    }
+}
+@media (max-width: 480px) {
+
+}
